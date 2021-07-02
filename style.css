@@ -1,0 +1,104 @@
+/* Initializing All HTML Elements using the * Wild Cart */
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* Setting a background Colour for the Page*/
+
+body {
+    background-color: #f3f3f3;
+}
+
+/* Styling the Navbar */
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+/* Styling for the Title and sub Title */
+
+.heading {
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+/* Styling for the Container that holds all the Cards */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items:stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/* Styling for the Card */
+.card {
+    overflow: hidden;
+    background-color: white;
+    width: 25%;
+    margin: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: #cecece 1px 4px 4px;
+    cursor: pointer;
+    transition:  0.5s ease-in-out;
+}
+
+/* Styling for the Paragrap0hs in the Card */
+.card p {
+    padding: 10px;
+    color: black;
+    font-size: 9pt;
+}
+
+/* Styling for the heading in the Card */
+
+.card h5 {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: -2rem;
+}
+
+
+/* Styling for the image in the Card */
+
+.card img {
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: #adadad 1px 6px 6px;
+}
+
+/* Handling the MouseOver (hover) event for the Card (Setting a greyscale filter to the image)  - I used google to archieve this*/
+
+.card:hover img {
+    transition:  0.5s ease-in-out;
+  filter: grayscale(1);
+  transform: scale(1.1);
+}
+
+
+/* Styling for the footer */
+
+footer {
+    width: 100%;
+    height: 1.5rem;
+    background-color: darkslategrey;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
